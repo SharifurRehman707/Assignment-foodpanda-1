@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodpanda Values </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .pink-bg {
+            background-color: #ff2b85;
+        }
+
+        .pink-text {
+            color: #ff2b85;
+        }
+
+        .pink-border {
+            border-color: #ff2b85;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .bg-fp-pink {
+            background-color: #D70F64;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+
+
+    <!-- navigation -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0">
+                    <a href="index.html">
+                        <img class="h-10"
+                            src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg"
+                            alt="foodpanda">
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-[#D70F64] font-medium flex items-center">
+                            About us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg border rounded-md py-2 w-48 mt-1">
+                            <a href="culture.html" class="block px-4 py-2 hover:bg-gray-100">Culture & values</a>
+                            <a href="team.html" class="block px-4 py-2 hover:bg-gray-100">Our teams</a>
+                        </div>
+                    </div>
+
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-[#D70F64] font-medium flex items-center">
+                            Why foodpanda? <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg border rounded-md py-2 w-56 mt-1">
+                            <a href="pandapurpose.html" class="block px-4 py-2 hover:bg-gray-100">pandapurpose</a>
+                            <a href="diversity.html" class="block px-4 py-2 hover:bg-gray-100">Diversity, Equity &
+                                Inclusion</a>
+                            <a href="benifits.html" class="block px-4 py-2 hover:bg-gray-100">Benefits</a>
+                        </div>
+                    </div>
+
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-[#D70F64] font-medium flex items-center">
+                            Jobs <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg border rounded-md py-2 w-64 mt-1">
+                            <a href="jobs.html" class="block px-4 py-2 hover:bg-gray-100">All Jobs</a>
+                            <a href="powerup.html" class="block px-4 py-2 hover:bg-gray-100">PowerUp! SG Tech
+                                Traineeship</a>
+                        </div>
+                    </div>
+
+                    <a href="location.html" class="text-gray-700 hover:text-[#D70F64] font-medium">Location</a>
+
+                    <div class="relative dropdown">
+                        <button class="text-gray-700 hover:text-[#D70F64] font-medium flex items-center">
+                            pandaStories <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg border rounded-md py-2 w-48 mt-1">
+                            <a href="blog.html" class="block px-4 py-2 hover:bg-gray-100">foodpanda Blog</a>
+                            <a href="newsroom.html" class="block px-4 py-2 hover:bg-gray-100">foodpanda News</a>
+                            <a href="blogdata.html" class="block px-4 py-2 hover:bg-gray-100">foodpanda Data Blog</a>
+                        </div>
+                    </div>
+
+                    <button class="bg-fp-pink text-white px-6 py-2 rounded-full font-bold hover:opacity-90">Newsroom
+                        ★</button>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 py-4 space-y-2">
+            <div>
+                <div class="font-bold text-[#D70F64] py-1">About Us</div>
+                <a href="culture.html" class="block py-1 pl-4 text-gray-700 hover:text-[#D70F64]">Culture & values</a>
+                <a href="team.html" class="block py-1 pl-4 text-gray-700 hover:text-[#D70F64]">Our teams</a>
+            </div>
+            <div>
+                <div class="font-bold text-[#D70F64] py-1">Why foodpanda?</div>
+                <a href="pandapurpose.html" class="block py-1 pl-4 text-gray-700 hover:text-[#D70F64]">pandapurpose</a>
+                <a href="diversity.html" class="block py-1 pl-4 text-gray-700 hover:text-[#D70F64]">Diversity, Equity &
+                    Inclusion</a>
+                <a href="benifits.html" class="block py-1 pl-4 text-gray-700 hover:text-[#D70F64]">Benefits</a>
+            </div>
+            <div>
+                <div class="font-bold text-[#D70F64] py-1">Jobs</div>
+                <a href="jobs.html" class="block py-1 pl-4 text-gray-700 hover:text-[#D70F64]">All Jobs</a>
+                <a href="powerup.html" class="block py-1 pl-4 text-gray-700 hover:text-[#D70F64]">PowerUp! SG Tech
+                    Traineeship</a>
+            </div>
+            <a href="location.html" class="block py-1 font-bold text-[#D70F64]">Location</a>
+            <div>
+                <div class="font-bold text-[#D70F64] py-1">pandaStories</div>
+                <a href="blog.html" class="block py-1 pl-4 text-gray-700 hover:text-[#D70F64]">foodpanda Blog</a>
+                <a href="newsroom.html" class="block py-1 pl-4 text-gray-700 hover:text-[#D70F64]">foodpanda News</a>
+                <a href="blogdata.html" class="block py-1 pl-4 text-gray-700 hover:text-[#D70F64]">foodpanda Data
+                    Blog</a>
+            </div>
+            <div class="pt-2">
+                <a href="newsroom.html"
+                    class="block bg-[#D70F64] text-white text-center px-6 py-2 rounded-full font-bold">Newsroom ★</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- end -->
+    <section class="pink-bg py-10 text-center">
+        <h1 class="text-white text-3xl font-bold">Our values</h1>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-12 text-center">
+        <h2 class="pink-text text-3xl font-bold mb-6">Together we win</h2>
+        <div class="max-w-4xl mx-auto text-gray-700 space-y-4">
+            <p>If you're passionate about good food and great work, you're in the right place. At foodpanda, we are a
+                potluck of cultures and personalities across 10 locations in Asia.</p>
+            <p>Our values are what unite us. We're always on the lookout for driven, talented and passionate pandas to
+                join our diverse team and drive success for the team, partners, and community.</p>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="text-center">
+            <img src="https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/img/c99c79de-9969-4108-9631-08dddaeee234"
+                alt="Own It" class="w-full rounded-lg mb-4">
+            <h3 class="text-xl font-bold mb-4">Own It</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+                <li>Get things done</li>
+                <li>Think long term</li>
+                <li>Use resources carefully</li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <img src="https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/img/df452c5d-70e7-4e69-1e45-08dddaf7a324"
+                alt="Raise the Bar" class="w-full rounded-lg mb-4">
+            <h3 class="text-xl font-bold mb-4">Raise the Bar</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+                <li>Set a high bar</li>
+                <li>Hire & develop the best</li>
+                <li>Provide feedback</li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <img src="https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/img/2f839fdc-d14e-4695-9636-08dddaeee234"
+                alt="Dive Deep" class="w-full rounded-lg mb-4">
+            <h3 class="text-xl font-bold mb-4">Dive Deep</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+                <li>Challenge the data</li>
+                <li>Know how things work</li>
+                <li>Be hands on</li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <img src="https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/img/578d8508-3de0-484b-9635-08dddaeee234"
+                alt="Bring Good Vibes" class="w-full rounded-lg mb-4">
+            <h3 class="text-xl font-bold mb-4">Bring Good Vibes</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+                <li>Be a good team player</li>
+                <li>Focus on what's possible</li>
+                <li>Create a positive workplace</li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <img src="https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/img/6f295577-7dfb-48b0-1e44-08dddaf7a324"
+                alt="Deliver Value Fast" class="w-full rounded-lg mb-4">
+            <h3 class="text-xl font-bold mb-4">Deliver Value Fast</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+                <li>Focus on what matters</li>
+                <li>Move with pace</li>
+                <li>Comfortable with change</li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <img src="https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/img/921040a6-4147-42e6-1e46-08dddaf7a324"
+                alt="Stay Humble" class="w-full rounded-lg mb-4">
+            <h3 class="text-xl font-bold mb-4">Stay Humble</h3>
+            <ul class="text-sm text-gray-600 space-y-1">
+                <li>Keep an open mind</li>
+                <li>Don't be entitled</li>
+                <li>Improve continuously</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="text-center pb-16">
+        <p class="pink-text text-sm italic mb-4">If these values describe you and the people you want to work with,
+            check out our open roles and book your place at our table!</p>
+        <a href="careers.html">
+            <button class="pink-bg text-white px-8 py-2 rounded-full font-bold hover:bg-pink-600 transition">EXPLORE
+                JOBS</button>
+        </a>
+    </div>
+
+    <section class="pink-bg relative py-20 overflow-hidden">
+        <div class="max-w-5xl mx-auto bg-white rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-xl mx-4">
+            <div class="md:w-1/2">
+                <img id="personImg"
+                    src="https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/img/6RsmZlEn6k9WkAjbxnaSxg/"
+                    class="w-full h-full object-cover" alt="Director">
+            </div>
+            <div class="md:w-1/2 p-10 flex flex-col justify-center">
+                <p id="testimonialText" class="text-gray-800 text-lg leading-relaxed mb-6">
+                    "My experience at foodpanda is phenomenal. The leadership team is outstanding, fostering a culture
+                    of ownership, empowerment, and accountability. We embrace agility and take risks, driving
+                    innovation. I am grateful for the opportunity to work with such a dynamic and inspiring company."
+                </p>
+                <h4 id="personName" class="pink-text font-bold">Javi Delgado</h4>
+                <p id="personTitle" class="pink-text text-sm">Director of Marketing - Grocery (APAC)</p>
+
+                <div class="flex space-x-4 mt-8">
+                    <button onclick="prevSlide()"
+                        class="w-10 h-10 border pink-border rounded-full flex items-center justify-center pink-text hover:bg-pink-50"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button onclick="nextSlide()"
+                        class="w-10 h-10 border pink-border rounded-full flex items-center justify-center pink-text hover:bg-pink-50"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <img src="https://www.foodpanda.com/wp-content/uploads/2023/04/pau-pau-peek-1.png"
+            class="absolute bottom-0 right-10 w-32 hidden md:block" alt="Panda">
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="pink-text text-2xl font-bold mb-10">Some jobs that may be of interest</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+                class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center flex flex-col items-center">
+                <div class="w-12 h-12 mb-4 bg-gray-50 flex items-center justify-center rounded-lg pink-text"><i
+                        class="fas fa-utensils"></i></div>
+                <h3 class="font-bold mb-2">Associate, Account Management</h3>
+                <p class="text-sm text-gray-500 mb-6 flex items-center"><i
+                        class="fas fa-map-marker-alt mr-2 pink-text"></i> Yangon, Myanmar</p>
+                <a href="careers.html">
+                    <button class="pink-bg text-white px-6 py-2 rounded-full text-xs font-bold">READ MORE</button>
+                </a>
+            </div>
+            <div
+                class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center flex flex-col items-center">
+                <div class="w-12 h-12 mb-4 bg-gray-50 flex items-center justify-center rounded-lg pink-text"><i
+                        class="fas fa-truck"></i></div>
+                <h3 class="font-bold mb-2">Specialist, Logistics Performance</h3>
+                <p class="text-sm text-gray-500 mb-6 flex items-center"><i
+                        class="fas fa-map-marker-alt mr-2 pink-text"></i> Kuala Lumpur, Malaysia</p>
+                <a href="careers.html">
+                    <button class="pink-bg text-white px-6 py-2 rounded-full text-xs font-bold">READ MORE</button>
+                </a>
+            </div>
+            <div
+                class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center flex flex-col items-center">
+                <div class="w-12 h-12 mb-4 bg-gray-50 flex items-center justify-center rounded-lg pink-text"><i
+                        class="fas fa-chart-line"></i></div>
+                <h3 class="font-bold mb-2">Specialist, Demand Control</h3>
+                <p class="text-sm text-gray-500 mb-6 flex items-center"><i
+                        class="fas fa-map-marker-alt mr-2 pink-text"></i> Taguig, Philippines</p>
+                <a href="careers.html">
+                    <button class="pink-bg text-white px-6 py-2 rounded-full text-xs font-bold">READ MORE</button>
+                </a>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <a href="careers.html">
+                <button class="pink-bg text-white px-10 py-3 rounded-full font-bold hover:bg-pink-600 transition">VIEW
+                    ALL
+                    JOBS</button>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        const testimonials = [
+            {
+                name: "Javi Delgado",
+                title: "Director of Marketing - Grocery (APAC)",
+                text: "My experience at foodpanda is phenomenal. The leadership team is outstanding, fostering a culture of ownership, empowerment, and accountability.",
+                img: "https://attraxcdnprod1-freshed3dgayb7c3.z01.azurefd.net/1481181/0f1cd41f-b5a4-4fa7-b963-a5706b26c90b/0.0.0/img/6RsmZlEn6k9WkAjbxnaSxg/"
+            },
+            {
+                name: "Sara Khan",
+                title: "Senior Product Designer",
+                text: "Designing for millions of users at Foodpanda is a thrill. Every day brings a new challenge and the collaborative spirit here is unmatched.",
+                img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+            }
+        ];
+
+        let currentIdx = 0;
+
+        function updateSlider() {
+            const person = testimonials[currentIdx];
+            document.getElementById('personImg').src = person.img;
+            document.getElementById('personName').innerText = person.name;
+            document.getElementById('personTitle').innerText = person.title;
+            document.getElementById('testimonialText').innerText = `"${person.text}"`;
+        }
+
+        function nextSlide() {
+            currentIdx = (currentIdx + 1) % testimonials.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentIdx = (currentIdx - 1 + testimonials.length) % testimonials.length;
+            updateSlider();
+        }
+    </script>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Logo Row -->
+            <div class="footer-logo-row">
+                <img src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg"
+                    alt="foodpanda logo">
+            </div>
+
+            <!-- Links Grid -->
+            <div class="footer-links-grid">
+                <!-- Column 1: Navigate -->
+                <div class="footer-col">
+                    <h3>Navigate</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutpg.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Collaborate -->
+                <div class="footer-col">
+                    <h3>Collaborate</h3>
+                    <ul>
+                        <li><a href="careers.html">Explore careers</a></li>
+                        <li><a href="pandapatner.html">Become a rider</a></li>
+                        <li><a href="partners.html">Feed your team</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Follow us (Socials) -->
+                <div class="footer-col social-col">
+                    <h3>Follow us on</h3>
+                    <div class="social-icons">
+                        <a href="index.html" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </a>
+                        <a href="index.html" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.066 11.993V6.287H3.66v5.706h1.406zM4.332 5.617c.463 0 .762-.303.762-.682s-.299-.682-.762-.682c-.463 0-.762.303-.762.682s.299.682.762.682zM12.67 12V8.45c0-1.898-.992-2.784-2.338-2.784-1.086 0-1.572.603-1.841 1.018V6.287H7.066s.018.397 0 5.706h1.425V9.456s.005-1.127.05-1.541c.068-.614.526-1.103 1.156-1.103.822 0 1.15.627 1.15 1.541V12h1.425z" />
+                            </svg>
+                        </a>
+                        <a href="index.html" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.232-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">Copyright © 2025 foodpanda</p>
+                <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </button>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
